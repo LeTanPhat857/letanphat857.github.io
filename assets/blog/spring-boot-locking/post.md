@@ -35,9 +35,39 @@ Pessimistic locking takes a database lock up front:
 entityManager.find(Account.class, id, LockModeType.PESSIMISTIC_WRITE);
 ```
 
-Use it when contention is high and retrying would be expensive.
+Use it when contention is high and retrying would be expensive. Under the hood JPA
+issues a locking `SELECT`:
+
+```sql
+SELECT id, balance, version
+FROM account
+WHERE id = 42
+FOR UPDATE;
+```
+
+> **Note:** a pessimistic lock is held until the transaction commits, so keep those
+> transactions short — long locks are how you turn a fast API into a queue.
+
+## Configuration
+
+Tune the lock timeout so a stuck transaction fails fast instead of hanging:
+
+```yaml
+spring:
+  jpa:
+    properties:
+      jakarta:
+        persistence:
+          lock:
+            timeout: 3000
+```
 
 ## Which one?
+
+| Strategy | Best for | Cost |
+| --- | --- | --- |
+| Optimistic | High read, low write contention | Retry on conflict |
+| Pessimistic | High write contention, short transactions | Blocks other writers |
 
 - **Optimistic** — high read, low write contention.
 - **Pessimistic** — high write contention, short transactions.
