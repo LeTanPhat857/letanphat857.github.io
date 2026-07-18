@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Spring Boot Locking",
+    "slug": "spring-boot-locking",
+    "date": "2026-07-18",
+    "author": "Phat Le Tan",
+    "tags": [
+      "spring-boot",
+      "jpa",
+      "postgresql"
+    ],
+    "path": "assets/blog/spring-boot-locking/post.md"
+  },
+  {
+    "title": "Getting Started with Angular Signals",
+    "slug": "angular-signals",
+    "date": "2026-06-10",
+    "author": "Phat Le Tan",
+    "tags": [
+      "angular",
+      "signals",
+      "frontend"
+    ],
+    "path": "assets/blog/angular-signals/post.md"
+  }
+]
