@@ -10,6 +10,17 @@
     "path": "assets/blog/cross-origin-resource-sharing-cors/post.md"
   },
   {
+    "title": "Remote debug trong Java",
+    "slug": "remote-debug-trong-java",
+    "date": "2023-09-02",
+    "author": "Phat",
+    "tags": [
+      "debugging",
+      "java"
+    ],
+    "path": "assets/blog/remote-debug-trong-java/post.md"
+  },
+  {
     "title": "Tổng quan về Bug và Debug trong lập trình",
     "slug": "tong-quan-ve-bug-va-debug-trong-lap-trinh",
     "date": "2023-09-01",
