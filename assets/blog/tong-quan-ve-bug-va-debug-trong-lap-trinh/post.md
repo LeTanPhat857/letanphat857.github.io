@@ -2,7 +2,7 @@
 title: Tổng quan về Bug và Debug trong lập trình
 slug: tong-quan-ve-bug-va-debug-trong-lap-trinh
 date: 2023-09-01
-author: Phat Le Tan
+author: Phat
 tags:
   - debugging
 ---
