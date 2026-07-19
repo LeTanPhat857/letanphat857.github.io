@@ -1,17 +1,5 @@
 [
   {
-    "title": "Spring Boot Locking",
-    "slug": "spring-boot-locking",
-    "date": "2026-07-18",
-    "author": "Phat Le Tan",
-    "tags": [
-      "spring-boot",
-      "jpa",
-      "postgresql"
-    ],
-    "path": "assets/blog/spring-boot-locking/post.md"
-  },
-  {
     "title": "Cross-Origin Resource Sharing (CORS)",
     "slug": "cross-origin-resource-sharing-cors",
     "date": "2024-02-27",
